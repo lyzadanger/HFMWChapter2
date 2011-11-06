@@ -1,0 +1,22 @@
+  .column {
+    margin: 10px 1.04166667% 0 0;
+  }
+  #visit {
+    margin: 0 68.75% 0 0;
+  }
+  #points {
+    width: 25%;
+    float: right;
+  }
+  #main {
+    margin: 10px 27.0833333% 0 26.0416667%;
+  }
+  #ontap {
+    width: 67%;
+    float: right;
+    margin: 10px 0 0 0;
+  }  
+  .header {
+    background:url('images/taps.jpg') repeat-x;
+    height: 300px;
+  }

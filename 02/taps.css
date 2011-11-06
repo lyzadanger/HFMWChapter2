@@ -1,0 +1,146 @@
+/* Everything Fluid */
+
+/* Simple reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Color, typography and basic layout
+ * (Shared for all devices and clients)
+ * Colors:
+ * - #f9f3e9 -> light cream (background)
+ * - #594846 -> Dark brown (body text, rules)
+ * - #42628F -> Dark blue (link text)
+ * - #7b96bc -> Medium-light blue (navigation and footer background)
+ */
+body {
+	background: #f9f3e9;
+	color: #594846;
+	font: 100% "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
+}
+a, a:visited {
+  color: #42628f;
+}
+p {
+  margin: 0.5em 0.25em;
+}
+h1 {
+  font-size: 1.75em;
+	border: solid #594846;
+	border-width: 2px 0;
+	padding: 0.25em;
+  text-align: center;
+  font-variant: small-caps;
+}
+h2 {
+  text-align: center;
+  font-variant: small-caps;
+}
+dl {
+  margin: 0 0.5em;
+}
+dt {
+  font-weight: bold;
+  margin: 0.5em 1em 0.5em 0;
+  border-bottom: 1px dashed #7b96bc;
+}
+.intro {
+  font-size: 1.15em;
+  line-height: 1.3em;
+  text-align: justify;
+  margin: 0.5em;
+  font-weight: bold;
+}
+.navigation {
+  background-color:#7b96bc;
+  border-bottom: 2px solid #594846;
+}
+.navigation ul li {
+  text-align: center;
+  display: block;
+  float: left;
+  padding: 0.25em 0;
+}
+.navigation li a {
+  color: #f9f3e9;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+.header p {
+  margin-left: -1000px;
+  margin-top: 0;
+}
+#points ul {
+  list-style-image: url('images/point.png');
+  margin: 0.5em 0 1em 0.5em;
+  padding-left: 1em;
+}
+#points ul li {
+  margin: 0.5em 1em;
+}
+.footer {
+  background-color: #7b96bc;
+  color: #f9f3e9;
+  text-align: center;
+  padding: .5em 0;
+  font-style: italic;
+}
+
+/* Structure */
+/* Common Structural Rules */
+.header, .footer {
+  clear: both;
+}
+.header {
+  background:url('images/taps.jpg') repeat-x;
+  height: 300px;
+}
+.navigation {
+  min-height: 25px;
+}
+img, object {
+  max-width: 100%;
+}
+.navigation ul li {
+  width: 33.333%;
+}
+.header, .footer, .navigation {
+  width: 100%;
+}
+
+/* Brews List */
+.taplist li {
+  display:block;
+  float:left;
+  text-align:center;
+  width:33%;
+}
+.taplist img {
+  width:100%;
+  margin-bottom:5px;
+}
+#ontap, #ontap ul, #ontap ul li {
+  background:#fff;
+}
+
+/* Mobile/lower-resolution devices */
+@media screen and (max-width:480px) {
+  .column {
+    margin: 1em 0;
+    border-bottom: 1px dashed #7b96bc;
+  }
+  #visit, #points, #main {
+    width: 100%;
+  }
+    .taplist li {
+    width:50%;
+  }
+  #map {
+    display:none;
+  }
+  .header {
+    display:none;
+  }
+}
