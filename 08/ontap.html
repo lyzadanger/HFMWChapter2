@@ -2,10 +2,10 @@
 <html> 
 <head> 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1" />  
     <title>On Tap Now at The Splendid Walrus</title> 
   <link rel="stylesheet" type="text/css" href="taps.css" /> 
-  <link rel="stylesheet" type="text/css" href="layout.css" media="all and (min-width: 641px)"/>
+  <link rel="stylesheet" type="text/css" href="layout.css" media="all and (min-width: 641px)" />
   <!--[if (lt IE 9) & (!IEMobile) ]>
   <link rel="stylesheet" type="text/css" href="layout.css" media="all" />
   <![endif]-->
@@ -62,6 +62,11 @@
     <dt>Call us</dt> 
     <dd>+1 (503) 555-1212</dd> 
   </dl> 
+  <div id="mapcontainer">
+    <p id="maplink">
+       <a href="http://g.co/maps/jm2pw">View Google Map</a>
+    </p>
+  </div>
 </div> 
 
 <div class="footer"> 
@@ -69,13 +74,13 @@
 </div> 
 <script type="text/javascript">
 var breakpoint = 641,
-  id = 'visit',
+  id = 'mapcontainer',
   viewportWidth = window.innerWidth;
 if (viewportWidth > breakpoint) {
   var mapElement = document.createElement('iframe');
   mapElement.id = 'map';
   mapElement.src = 'http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=334+NW+11th+Ave,+Portland,+OR+97209&aq=&sll=37.0625,-95.677068&sspn=58.164117,80.332031&vpsrc=0&ie=UTF8&hq=&hnear=334+NW+11th+Ave,+Portland,+Oregon+97209&t=m&ll=45.525472,-122.68218&spn=0.01804,0.025749&z=14&output=embed';
-  document.getElementById(id).appendChild(mapElement);
+  document.getElementById(id).insertBefore(mapElement,maplink);
 }
 </script>
 </body> 

@@ -28,8 +28,8 @@
     margin: 0;
     min-width: 200px;
   }
-@media screen and (min-width: 1201px) {
-  .taplist li {
-    width: 25%;
+  @media screen and (min-width:1201px) {
+    .taplist li {
+      width: 25%;
+    }
   }
-}
